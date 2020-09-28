@@ -1,0 +1,61 @@
+
+/*******************
+*
+* Layout
+********************/
+
+*{
+	font-family: $sans-serif;
+}
+
+
+/*******************
+*
+* Headlines
+********************/
+
+h3{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*******************
+*
+* Bootstrap elements
+********************/
+
+// .input-group-addon{
+// 	background-color: $NEPHRITIS;
+// }
+
+
+.elementUp{
+	transform: translateY(-150px) !important;
+}
+
+/*******************
+*
+* Buttons
+********************/
+
+.add-btn{
+	$bw: 70px;
+
+	background-color: $EMERALD;
+	border: none;
+	outline: none;
+	font-size: 35px;
+	width: $bw;
+	height: $bw;
+	border-radius: $bw;
+	line-height: 30px;
+
+	&--right{
+		@extend .add-btn;
+		float: right;
+	}
+
+	&:hover{
+		background-color: darken($EMERALD, 5%);
+	}
+}

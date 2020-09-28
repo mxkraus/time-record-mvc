@@ -1,0 +1,124 @@
+
+.template-single{
+	height: 100vh;
+
+	main{
+
+		header{
+			background-color: $SUNFLOWER;
+			padding: 30px 20px;
+			height: 80px;
+			text-align: center;
+
+			h3{
+				color: $WHITE;
+				display:inline-block;
+				margin-top: -9px;
+
+				.summary-badge{
+					color: $MIDNIGHTBLUE;
+				    display: block;
+				    font-size: 13px;
+				    margin-top: 6px;
+				}
+			}
+
+			.menu-toggle{
+				color: $MIDNIGHTBLUE;
+				font-size: $font-m;
+			}
+		}
+
+		section.add-new{
+			height: calc(100vh - 100px);
+			transition: all 0.25s ease-in-out !important;
+			position: relative;
+
+			form{
+				height: 100%;
+    			position: relative;
+
+				.input-group{
+					width: 100%;
+					margin-bottom: 10px;
+					&-addon{
+						min-width: 75px;
+						background-color: $SILVER;
+						border: 1px solid $SILVER;
+						border-radius: 0;
+					}
+				}
+
+				input{
+					line-height: 24px;
+				}
+
+				.newhours-background{
+					display: block;
+					background-color: $MIDNIGHTBLUE;
+					padding: 15px;
+					margin-bottom: 15px;
+					margin-left: -15px;
+    				margin-right: -15px;
+    				color: $SILVER;
+    				display: flex;
+				    justify-content: space-around;
+				    align-items: center;
+
+					input[name="newhours"]{
+						width: 70px;
+					    height: 70px;
+					    border-radius: 70px;
+					    text-align: center;
+					    color: $WHITE;
+					    background-color: $WETASPHALT;
+					    border: 1px solid $SILVER;
+					}
+				}
+
+				input[type="date"]{
+					-webkit-appearance: square-button;
+					text-align: center;
+					border-radius: 0;
+					border: 1px solid $SILVER;
+				}
+
+				input[type="time"]{
+				    -webkit-appearance: square-button;
+					border-radius: 0;
+					border: 1px solid $SILVER;
+					text-align: center;
+				}
+				
+				textarea{
+					padding: 5px;
+				    font-size: 16px;
+				    line-height: 24px;
+				    width: 100%;
+				    height: 120px;
+				    color: #999;
+				}
+
+				footer{
+					background-color: transparent;
+					display: flex;
+					justify-content: center;
+					position: absolute;
+				    width: 100%;
+				    bottom: 0;
+				}
+			}
+
+		}
+
+		section.show-list{
+			footer{
+				padding: 0 15px;
+				background-color: transparent
+			}
+		}
+
+	}
+	
+
+}
